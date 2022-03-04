@@ -16,13 +16,6 @@ app.post('/', (req,res) => {
     res.sendFile(path.join(__dirname, '/views/home.html'))
 })
 
-app.get('/views/register.html', (req,res) => {
-    res.sendFile(path.join(__dirname, '/views/register.html'))
-})
-
-app.get('/views/login.html', (req,res) => {
-    res.sendFile(path.join(__dirname, '/views/login.html'))
-})
 
 app.listen(PORT, () => { console.log( `
 Servidor escuchando en el puerto ${PORT}
